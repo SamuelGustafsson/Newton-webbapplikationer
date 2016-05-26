@@ -175,6 +175,10 @@ margin-bottom:25px;
   display: inline-block;
  }
  
+  #contactform-text-column > h4{
+    font-weight: bold;
+  }
+ 
  .contact-form-input {
    display: inline-block;
    margin-left: 0px;
