@@ -11,15 +11,11 @@ header, section, footer, aside, nav, article, figure, figcaption {
    margin: 0px;
 }       
 
-body {
-   background: center;
-   background-image: url("img/monaco.jpg")
+a{
+  text-decoration: none;
 }
 
-.header-contact-div > span {
-  color: white;
-  width: auto;
-}
+
 
 figcaption {
   text-align: center;
@@ -31,10 +27,9 @@ figcaption {
 
 /******* header *******/
 
-#header-row-1{
-  background-color:#242424;
-  height: 70px;
-  
+.header-contact-div > span {
+  color: white;
+  width: auto;
 }
 
 #header-row-2{
@@ -57,7 +52,6 @@ height: 100%;
 color: white;
 display: inline-block;
 font-weight: bold;
-text-decoration: none;
 }
 
 .header-contact-div {
@@ -114,7 +108,7 @@ figcaption {
   color: black;
 }
 
-#background-color {
+#grid-containerr {
   background-color: #F0F0F0;
 }
 /******* slider *******/
@@ -152,7 +146,9 @@ margin-bottom:25px;
 /******* footer *******/
 
 			footer {
-				font-size: 80%;}
+				font-size: 80%;
+      }
+        
         
         
  /******* Contact page *******/
@@ -172,6 +168,10 @@ margin-bottom:25px;
  
   #contactform-text-column > h4{
     font-weight: bold;
+  }
+  
+    #contactform-text-column > p{
+    padding: 10px 0px;
   }
  
  .contact-form-input {
@@ -248,4 +248,12 @@ margin-bottom:25px;
   width: 100%;
 }
 
-
+@media (max-width: 400px) {
+  #contact-form-container{
+    padding: 0px;
+  }
+  
+  #page-on-title-row{
+    visibility: collapse;
+  }
+}
