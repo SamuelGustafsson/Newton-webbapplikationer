@@ -29,28 +29,32 @@
         <section id="contact-form-container" class="grid-100 tablet-grid-100 mobile-grid-100">
             <div id="contactform-text-column" class="grid-33 tablet-grid-33 mobile-grid-100">
                 <h2>Contact info</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt vero reprehenderit numquam repudiandae minima est dolor, itaque soluta doloribus officiis facilis fugiat tempora rem ipsum inventore eaque praesentium. Sit, fugiat.</h4>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt vero reprehenderit numquam repudiandae minima est dolor, itaque soluta doloribus officiis facilis fugiat tempora rem ipsum inventore eaque praesentium. Sit, fugiat.</strong></h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus expedita, consectetur, totam
                     neque, vitae laudantium ab non, facilis nemo voluptatem eos delectus perspiciatis. Perferendis exercitationem
                     itaque nihil blanditiis tenetur.</p>
             </div>
 
-            <form class="grid-66 tablet-grid-66 mobile-grid-100">
+            <form id="contact-form" class="grid-66 tablet-grid-66 mobile-grid-100">
                 <h2>Contact form</h2>
+                <div id="contact-form-message"></div>
                 <div class="grid-33 tablet-grid-33 mobile-grid-100 contact-form-input">
-                    <input type="text" placeholder="Name:"/>
+                    <input id="contact-name" type="text" placeholder="Name:"/>
                 </div>
 
                 <div class="grid-33 tablet-grid-33 mobile-grid-100 contact-form-input">
-                    <input type="text" placeholder="Email:"/>
+                    <input id="contact-email" type="text" placeholder="Email:"/>
                 </div>
 
                 <div class="grid-33 tablet-grid-33 mobile-grid-100 contact-form-input">
-                    <input type="text" placeholder="Phone:"/>
+                    <input id="contact-form" type="text" placeholder="Phone:"/>
                 </div>
 
                 <div id="contact-form-messagebox" class="grid-100 tablet-grid-100 mobile-grid-100 contact-form-input">
                     <textarea placeholder="Message:"></textarea>
+                </div>
+                <div id="contact-form-submit">
+                   <input type="submit"> 
                 </div>
             </form>
 
@@ -63,5 +67,7 @@
             </section>
         </footer>
     </div>
+    
+    <script src="../js/contact-form.js"></script>
     </body>
 </html>
