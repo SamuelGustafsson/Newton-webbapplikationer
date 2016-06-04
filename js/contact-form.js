@@ -3,7 +3,7 @@ var elContactName = document.getElementById('contact-name');
 var elContactEmail = document.getElementById('contact-email');
 var elContactPhone = document.getElementById('contact-phone');
 var elContactMessage = document.getElementById('contact-form-message');
-
+var elContactTextArea = document.getElementById('contact-textarea');
 
 
 
@@ -29,16 +29,14 @@ function checkForm(event) {
          elContactMessage.textContent = 'Your phonenumber cant have letters';
    }
    else if (elContactPhone.value.length < 10) {
-         elContactMessage.textContent = 'Phonenumber is invalid. Write you number with 10 numbers.'
+         elContactMessage.textContent = 'Phonenumber is invalid. Write you number with 10 numbers.';
    }
-
-   
+   else if (elContactTextArea == null){
+         elContactTextArea.textContent = '';
+   }
+      
    else {
-         
-          if (elContactMessage.value == null){
-            elContactMessage.value = "";
-            }
-      alert("Message has been sent! \nFrom: " + elContactName.value + "\nEmail:  " + elContactEmail.value + "\nPhone: " + elContactPhone.value + "\nMessage: " + elContactMessage.value);
+      alert("Message has been sent! \nFrom: " + elContactName.value + "\nEmail:  " + elContactEmail.value + "\nPhone: " + elContactPhone.value + "\nMessage: " + elContactTextArea.value);
    }
 
 }
