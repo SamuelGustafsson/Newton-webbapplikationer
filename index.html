@@ -24,7 +24,16 @@
         </header>
 
         <section id="mainpage-slider" class="grid-100 tablet-grid-100 mobile-grid-100">
-            <img src="img/slider-1200/monaco-1200.png" alt="Slider with travel destinations" class="img-main">
+            <img src="img/slider-1200/monaco-1200.png" alt="Slider Monaco" class="img-main carousel">
+            <img src="img/slider-1200/marocco-1200.png" alt="Slider Marocco" class="img-main carousel">
+            <img src="img/slider-1200/norway-1200.png" alt="Slider Norway" class="img-main carousel">
+            <img src="img/slider-1200/spain-1200.png" alt="Slider Spain" class="img-main carousel">
+        </section>
+        <section>
+            <div class="slider-button-div">
+                <button onclick="indexSlider.prev(3000)">Previous</button>
+                <button onclick="indexSlider.next(3000)">Next</button>
+            </div>
         </section>
 
         <section id="main-destinations">
@@ -71,6 +80,10 @@
             </section>
         </footer>
     </div>
+    <script src="js/carousel.js"></script>
+    <script>
+        var indexSlider = new Carousel();
+    </script>
 </body>
 
 </html>

@@ -16,6 +16,9 @@ function emailValidation (email) {
 
 function checkForm(event) {
       event.preventDefault();
+      var checkEmail = emailValidation(elContactEmail);
+      alert(checkEmail);
+      
    if (elContactName.value.length < 2) {
       elContactMessage.textContent = 'Invalid username';
    }

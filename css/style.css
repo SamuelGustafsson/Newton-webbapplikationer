@@ -122,6 +122,10 @@ figcaption {
   background-color: #F0F0F0;
 }
 /******* slider *******/
+.slider-button-div {
+  text-align: center;
+}
+
 #mainpage-slider{
  padding-top: 25px;
 }
