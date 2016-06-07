@@ -16,13 +16,12 @@ function emailValidation (email) {
 
 function checkForm(event) {
       event.preventDefault();
-      var checkEmail = emailValidation(elContactEmail);
-      alert(checkEmail);
+      var isEmailValid = emailValidation(elContactEmail);
       
    if (elContactName.value.length < 2) {
       elContactMessage.textContent = 'Invalid username';
    }
-   else if (emailValidation(elContactEmail) == false) {
+   else if (isEmailValid == false) {
          alert('Invalid email, example "person@company.com"');
    }
    else if (isNaN(elContactPhone.value) || elContactPhone.value == null) {
