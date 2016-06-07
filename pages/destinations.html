@@ -24,7 +24,16 @@
     </header>
 
     <section id="mainpage-slider" class="grid-100 tablet-grid-100 mobile-grid-100">
-      <img src="../img/slider-1200/monaco-1200.png" alt="Slider with travel destinations" class="img-main">
+      <img src="../img/slider-1200/monaco-1200.png" alt="Slider Monaco" class="img-main carousel">
+      <img src="../img/slider-1200/marocco-1200.png" alt="Slider Marocco" class="img-main carousel">
+      <img src="../img/slider-1200/norway-1200.png" alt="Slider Norway" class="img-main carousel">
+      <img src="../img/slider-1200/spain-1200.png" alt="Slider Spain" class="img-main carousel">
+    </section>
+    <section>
+      <div id="destinations-slider-button-div" class="slider-button-div">
+        <button onclick="destinationsSlider.prev(3000)">Previous</button>
+        <button onclick="destinationsSlider.next(3000)">Next</button>
+      </div>
     </section>
 
     <section class="grid-100 tablet-grid-100 mobile-grid-100">
@@ -51,7 +60,7 @@
             fuga nam, inventore doloremque, ea vitae ipsum pariatur neque fugiat. Veniam repellendus, illo perferendis.</p>
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quisquam quidem consectetur impedit, magnam quae ab cupiditate, nam vel quis eius repellat? Dolore atque culpa maxime, soluta veritatis esse vero!</span>
         </article>
-       <article class="mobile-grid-100 destination-image-container hide-on-desktop hide-on-tablet" >
+        <article class="mobile-grid-100 destination-image-container hide-on-desktop hide-on-tablet">
           <img src="../img/destinations-600/norway-600.png" alt="Picture of Norway" class="destination-item-image" />
         </article>
       </section>
@@ -64,13 +73,15 @@
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quisquam quidem consectetur impedit, magnam quae ab cupiditate, nam vel quis eius repellat? Dolore atque culpa maxime, soluta veritatis esse vero!</span>
         </article>
         <article class="grid-50 tablet-grid-50 mobile-grid-100 destination-image-container">
-          <img src="../img/destinations-600/new-zeeland-600.png" alt="Picture of New Zeeland" class="destination-item-image grid-100 tablet-grid-100 mobile-grid-100" />
+          <img src="../img/destinations-600/new-zeeland-600.png" alt="Picture of New Zeeland" class="destination-item-image grid-100 tablet-grid-100 mobile-grid-100"
+          />
         </article>
       </section>
 
       <section class="grid-100 tablet-grid-100 mobile-grid-100 destination-image-container">
         <article class="grid-50 tablet-grid-50 hide-on-mobile destination-image-container">
-          <img src="../img/destinations-600/space-600.png" alt="Picture of Space" class="destination-item-image grid-100 tablet-grid-100 mobile-grid-100" />
+          <img src="../img/destinations-600/space-600.png" alt="Picture of Space" class="destination-item-image grid-100 tablet-grid-100 mobile-grid-100"
+          />
         </article>
         <article class="grid-50 tablet-grid-50 mobile-grid-100 destination-information">
           <h2 id="destination-titel-4">Space</h2>
@@ -78,8 +89,9 @@
             fuga nam, inventore doloremque, ea vitae ipsum pariatur neque fugiat. Veniam repellendus, illo perferendis.</p>
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quisquam quidem consectetur impedit, magnam quae ab cupiditate, nam vel quis eius repellat? Dolore atque culpa maxime, soluta veritatis esse vero!</span>
         </article>
-         <article class="destination-image-container hide-on-desktop mobile-grid-100">
-          <img src="../img/destinations-600/space-600.png" alt="Picture of Space" class="destination-item-image grid-100 tablet-grid-100 mobile-grid-100" />
+        <article class="destination-image-container hide-on-desktop mobile-grid-100">
+          <img src="../img/destinations-600/space-600.png" alt="Picture of Space" class="destination-item-image grid-100 tablet-grid-100 mobile-grid-100"
+          />
         </article>
       </section>
 
@@ -91,6 +103,10 @@
       </section>
     </footer>
   </div>
+  <script src="../js/carousel.js"></script>
+  <script>
+        var destinationsSlider = new Carousel();
+    </script>
 </body>
 
 </html>

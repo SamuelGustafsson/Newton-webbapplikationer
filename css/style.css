@@ -126,6 +126,14 @@ figcaption {
   text-align: center;
 }
 
+#destinations-slider-button-div {
+  padding: 10px 0px;
+}
+
+#index-slider-button-div {
+  padding-top: 15px;
+}
+
 #mainpage-slider{
  padding-top: 25px;
 }
